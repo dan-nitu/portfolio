@@ -1,7 +1,7 @@
-import './assets/scss/main.scss';
+import './assets/scss/style.scss';
 
 function App() {
-  return <div className='yolo-swag'>Hello world</div>;
+  return;
 }
 
 export default App;
