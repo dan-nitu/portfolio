@@ -9,6 +9,8 @@ import ContactPage from './pages/Contact';
 
 import ErrorPage from './pages/Error';
 
+import './assets/scss/style.scss';
+
 const router = createBrowserRouter([
   {
     path: '/',
