@@ -1,12 +1,12 @@
-@import url('./sass-utils/_functions.scss');
-@import url('./sass-utils/_helpers.scss');
-@import url('./sass-utils/_mixins.scss');
-@import url('./sass-utils/_variables.scss');
+@import './sass-utils/functions';
+@import './sass-utils/helpers';
+@import './sass-utils/mixins';
+@import './sass-utils/variables';
 
-@import url('./base/_reset.scss');
-@import url('./base/_typography.scss');
+@import './base/reset';
+@import './base/typography';
 
-@import url('./layout/_navigation.scss');
+@import './layout/navigation';
 
-// @import url('./components/');
-// @import url('./pages/');
+// @import './components/';
+// @import './pages/';

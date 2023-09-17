@@ -1,18 +1,13 @@
-import { Link } from 'react-router-dom';
+import NavLinks from './NavLinks';
+import NavExtraControls from './NavExtraControls';
 
 const Navigation = () => {
   return (
-    <>
-      <div className='links yolo'>
-        <Link to={'/'}>HomePage.jsx</Link>
-        <Link to={'/about'}>AboutPage.jsx</Link>
-        <Link to={'/projects'}>ProjectsPage.jsx</Link>
-        <Link to={'/contact'}>ContactPage.jsx</Link>
-      </div>
-      <div className='controls'>
-        {/* // moon, banana, minimize, maximize, close */}
-      </div>
-    </>
+    <div className='navigation'>
+      <NavLinks />
+
+      <NavExtraControls />
+    </div>
   );
 };
 

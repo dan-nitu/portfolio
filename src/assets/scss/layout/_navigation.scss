@@ -1,0 +1,83 @@
+.navigation {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: $cod-gray;
+
+  @include breakpoint(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    &.links {
+      overflow-x: auto;
+      display: flex;
+      border-top: solid 1px $mine-shaft;
+      border-bottom-color: transparent;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      a {
+        font-size: 11px;
+
+        color: $silver-chalice;
+        text-decoration: none;
+
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        padding-right: 24px;
+
+        border-bottom: solid 1px $mine-shaft;
+        border-right: solid 1px $mine-shaft;
+        border-top: solid 1px transparent;
+
+        &::before {
+          content: '';
+          background-image: url('./../../images/react-logo.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+
+          width: 12px;
+          height: 12px;
+          margin-right: 6px;
+        }
+
+        &:hover {
+          background-color: $mine-shaft2;
+        }
+
+        &.active {
+          background-color: $mine-shaft2;
+          border-top-color: $mariner;
+          border-bottom-color: $mine-shaft2;
+        }
+      }
+    }
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+
+    > svg {
+      height: 24px;
+      width: auto;
+      cursor: pointer;
+      margin-inline: 3px;
+      padding: 3px;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: $mine-shaft2;
+        border-radius: 3px;
+      }
+    }
+  }
+}
