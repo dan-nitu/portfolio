@@ -1,0 +1,51 @@
+.breadcrumbs {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  display: flex;
+  list-style: none;
+
+  margin-left: 12px;
+
+  li {
+    font-size: 11px;
+    color: $silver-chalice;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+
+        display: block;
+        width: 10px;
+        height: 10px;
+
+        background-color: $silver-chalice;
+        -webkit-mask-image: url('./../../images/arrow-forward-ios.svg');
+        mask-image: url('./../../images/arrow-forward-ios.svg');
+        mask-position: center;
+        mask-size: contain;
+        mask-repeat: no-repeat;
+
+        margin-inline: 3px;
+      }
+    }
+
+    &.react {
+      &::before {
+        content: '';
+
+        display: block;
+        width: 10px;
+        height: 10px;
+
+        background-image: url('./../../images/react-logo.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        margin-right: 3px;
+      }
+    }
+  }
+}
