@@ -1,0 +1,15 @@
+$colors: (
+  'golden-dream': $golden-dream,
+  'mariner': $mariner,
+  'pelorous': $pelorous,
+  'picton-blue': $picton-blue,
+  'sapling': $sapling,
+  'tussock': $tussock,
+  'viola': $viola,
+);
+
+@each $color-name, $color-value in $colors {
+  .#{$color-name} {
+    color: $color-value;
+  }
+}
