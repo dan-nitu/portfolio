@@ -12,6 +12,11 @@
     display: flex;
     align-items: center;
 
+    &:hover {
+      color: $white;
+      cursor: pointer;
+    }
+
     &:not(:last-child) {
       &::after {
         content: '';

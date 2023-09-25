@@ -16,8 +16,6 @@ const HomePage = () => {
     },
   ];
 
-  /* <>/{} */
-
   const lessThan = String.fromCharCode(60);
   const greaterThan = String.fromCharCode(62);
   const slash = String.fromCharCode(47);
@@ -28,97 +26,144 @@ const HomePage = () => {
     <>
       <Breadcrumbs path={path} />
 
-      <div className='page-content'>
+      <div className='homepage'>
         <div>
-          <span className='viola'>import</span>{' '}
-          <span className='golden-dream'>{leftCurlyBracket}</span>{' '}
-          <span className='mariner'>Link</span>
-          <span className='golden-dream'>{rightCurlyBracket}</span>{' '}
-          <span className='viola'>from</span>{' '}
-          <span className='tussock'>'react-router-dom'</span>;
+          <span className='viola'>import </span>
+          <span className='gold'>{leftCurlyBracket}</span>
+          <span className='anakiwa'> Link </span>
+          <span className='gold'>{rightCurlyBracket}</span>
+          <span className='viola'> from </span>
+          <span className='my-pink'>'react-router-dom'</span>
+          <span className='silver'>;</span>
         </div>
+
         <div></div>
+
         <div>
-          <span className='viola'>import</span>{' '}
-          <span className='mariner'>DanNitu</span>{' '}
-          <span className='viola'>from</span>{' '}
-          <span className='tussock'>
+          <span className='viola'>import </span>
+          <span className='anakiwa'>DanNitu </span>
+          <span className='viola'>from </span>
+          <span className='my-pink'>
             '.{slash}..{slash}
             components{slash}DanNitu'
           </span>
-          ;
+          <span className='silver'>;</span>
         </div>
+
         <div></div>
+
         <div>
-          <span className='picton-blue'>const</span>{' '}
-          <span className='sapling'>HomePage</span> ={' '}
-          <span className='golden-dream'>()</span>{' '}
-          <span className='picton-blue'>={greaterThan}</span>{' '}
-          <span className='golden-dream'>{leftCurlyBracket}</span>
+          <span className='havelock-blue'>const </span>
+          <span className='sapling'>HomePage </span>
+          <span className='silver'>=</span>
+          <span className='gold'> () </span>
+          <span className='havelock-blue'>={greaterThan} </span>
+          <span className='gold'>{leftCurlyBracket}</span>
         </div>
+
         <div>
           <span className='viola'>return (</span>
         </div>
+
         <div>
-          {lessThan}
-          {greaterThan}
-        </div>
-        <div>
-          <span className='picton-blue'>
-            {lessThan}h1{greaterThan}
-          </span>
-          Hello World!
-          <span className='picton-blue'>
+          <span className='gray'>
             {lessThan}
-            {slash}h1{greaterThan}
+            {greaterThan}
           </span>
         </div>
+
         <div>
-          <span className='picton-blue'>
-            {lessThan}h2{greaterThan}
-          </span>
-          I am {lessThan} <span className='pelorous'>DanNitu</span>{' '}
-          <span className='mariner'>position</span>=
-          <span className='picton-blue'>{leftCurlyBracket}</span>
-          <span className='tussock'>'Frontend Developer'</span>
-          <span className='picton-blue'>{rightCurlyBracket}</span> {slash}
-          {greaterThan}.{lessThan}
-          {slash}h2{greaterThan}
-        </div>
-        <div>
-          <span className='picton-blue'>
-            {lessThan}p{greaterThan}
-          </span>
-          If you want to find more about myself please click on the {lessThan}
-          <span className='pelorous'>Link</span>{' '}
-          <span className='mariner'>to</span>=
-          <span className='mariner'>{leftCurlyBracket}</span>
-          <span className='tussock'>'{slash}about'</span>
-          <span className='mariner'>{rightCurlyBracket}</span>
-          {greaterThan}About page{lessThan}
-          {slash}
-          <span className='pelorous'>Link</span>
-          {greaterThan}.
-          <span className='picton-blue'>
+          <span className='gray'>{lessThan}</span>
+          <span className='havelock-blue'>h1</span>
+          <span className='gray'>{greaterThan}</span>
+          <span className='silver'>Hello World!</span>
+          <span className='gray'>
             {lessThan}
-            {slash}p{greaterThan}
+            {slash}
+          </span>
+          <span className='havelock-blue'>h1</span>
+          <span className='gray'>{greaterThan}</span>
+        </div>
+
+        <div>
+          <span className='gray'>{lessThan}</span>
+          <span className='havelock-blue'>h2</span>
+          <span className='gray'>{greaterThan}</span>
+          <span className='silver'>I am </span>
+          <span className='gray'>{lessThan}</span>
+          <span className='puerto-rico'>DanNitu </span>
+          <span className='anakiwa'>position</span>
+          <span className='silver'>=</span>
+          <span className='havelock-blue'>{leftCurlyBracket}</span>
+          <span className='my-pink'>'Frontend Developer'</span>
+          <span className='havelock-blue'>{rightCurlyBracket}</span>
+          <span className='gray'>
+            {slash}
+            {greaterThan}
+          </span>
+          <span className='silver'>.</span>
+          <span className='gray'>
+            {lessThan}
+            {slash}
+          </span>
+          <span className='havelock-blue'>h2</span>
+          <span className='gray'>{greaterThan}</span>
+        </div>
+
+        <div>
+          <span className='gray'>{lessThan}</span>
+          <span className='havelock-blue'>p</span>
+          <span className='gray'>{greaterThan}</span>
+          <span className='silver'>
+            If you want to find more about myself please click on the{' '}
+          </span>
+          <span className='gray'>{lessThan}</span>
+          <span className='puerto-rico'>Link </span>
+          <span className='anakiwa'>to</span>=
+          <span className='havelock-blue'>{leftCurlyBracket}</span>
+          <span className='my-pink'>'{slash}about'</span>
+          <span className='havelock-blue'>{rightCurlyBracket}</span>
+          <span className='gray'>{greaterThan}</span>
+          <span className='silver'>About page</span>
+          <span className='gray'>
+            {lessThan}
+            {slash}
+          </span>
+          <span className='puerto-rico'>Link</span>
+          <span className='gray'>{greaterThan}</span>
+          <span className='silver'>.</span>
+          <span className='gray'>
+            {lessThan}
+            {slash}
+          </span>
+          <span className='havelock-blue'>p</span>
+          <span className='gray'>{greaterThan}</span>
+        </div>
+
+        <div>
+          <span className='gray'>
+            {lessThan}
+            {slash}
+            {greaterThan}
           </span>
         </div>
+
         <div>
-          {lessThan}
-          {slash}
-          {greaterThan}
+          <span className='viola'>)</span>
+          <span className='silver'>;</span>
         </div>
+
         <div>
-          <span className='viola'>)</span>;
+          <span className='gold'>{rightCurlyBracket}</span>
+          <span className='silver'>;</span>
         </div>
-        <div>
-          <span className='golden-dream'>{rightCurlyBracket}</span>;
-        </div>
+
         <div></div>
+
         <div>
-          <span className='viola'>export default</span>{' '}
-          <span className='sapling'>HomePage</span>;
+          <span className='viola'>export default</span>
+          <span className='sapling'> HomePage</span>
+          <span className='silver'>;</span>
         </div>
       </div>
     </>

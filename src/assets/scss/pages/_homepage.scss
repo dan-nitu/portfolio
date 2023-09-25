@@ -1,0 +1,26 @@
+.homepage {
+  font-family: Consolas, 'Courier New', monospace;
+
+  margin-top: 16px;
+
+  counter-reset: line-number;
+
+  > div {
+    font-size: 14px;
+    line-height: 19px;
+
+    display: flex;
+    white-space: pre-wrap;
+
+    &::before {
+      counter-increment: line-number;
+      content: counter(line-number);
+
+      color: $pale-sky;
+      text-align: right;
+
+      width: 2ch;
+      margin-inline: 2.5ch;
+    }
+  }
+}
