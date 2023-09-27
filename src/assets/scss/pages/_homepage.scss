@@ -4,14 +4,17 @@
   margin-top: 16px;
 
   counter-reset: line-number;
+  position: relative;
 
-  > div {
+  > * {
+    margin-left: 7ch;
+
     font-size: 14px;
     line-height: 19px;
+    min-height: 19px;
+  }
 
-    display: flex;
-    white-space: pre-wrap;
-
+  .line {
     &::before {
       counter-increment: line-number;
       content: counter(line-number);
@@ -19,8 +22,15 @@
       color: $pale-sky;
       text-align: right;
 
+      position: absolute;
+      left: 0;
       width: 2ch;
       margin-inline: 2.5ch;
     }
+  }
+
+  .indented {
+    padding-left: 15px;
+    border-left: solid 1px rgba($pale-sky, 0.65);
   }
 }
