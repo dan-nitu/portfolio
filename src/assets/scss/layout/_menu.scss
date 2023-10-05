@@ -1,0 +1,101 @@
+.menu {
+  font-family: Segoe WPC, Segoe UI, sans-serif;
+  background-color: $cod-gray;
+  padding-block: 6px;
+
+  .title {
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-inline: 12px;
+    cursor: default;
+  }
+
+  .folder {
+    display: flex;
+    line-height: 22px;
+    font-size: 13px;
+    color: $silver;
+    padding-inline: 12px;
+    cursor: default;
+
+    &:hover {
+      background-color: $tuna;
+    }
+
+    &.pages {
+      &::before {
+        content: '';
+        display: block;
+        height: 22px;
+        width: 22px;
+        background-image: url('./../../images/folder-views-open.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 55%;
+      }
+    }
+  }
+
+  .indented {
+    padding-left: 32px;
+  }
+
+  ul {
+    position: relative;
+
+    li {
+      display: flex;
+      line-height: 22px;
+      font-size: 13px;
+      padding-inline: 12px 36px;
+
+      &:hover {
+        background-color: $tuna;
+      }
+
+      a {
+        text-decoration: none;
+        color: $silver;
+
+        &.active {
+          color: $calico;
+
+          &::after {
+            content: 'A';
+            position: absolute;
+            font-size: 0.75em;
+            padding-top: 1px;
+            right: 8px;
+          }
+        }
+      }
+
+      &.pages {
+        &::before {
+          content: '';
+          display: block;
+          height: 22px;
+          width: 22px;
+          background-image: url('./../../images/react-logo.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 55%;
+        }
+      }
+
+      &.readme {
+        &::before {
+          content: '';
+          display: block;
+          height: 22px;
+          width: 22px;
+          background-image: url('./../../images/readme.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 65%;
+        }
+      }
+    }
+  }
+}

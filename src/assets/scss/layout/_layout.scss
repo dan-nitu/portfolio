@@ -1,0 +1,7 @@
+.layout {
+  display: flex;
+
+  > div:last-child {
+    flex-grow: 1;
+  }
+}
