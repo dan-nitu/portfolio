@@ -3,11 +3,11 @@ import NavExtraControls from './NavExtraControls';
 
 const Navigation = () => {
   return (
-    <div className='navigation'>
+    <nav className='navigation'>
       <NavLinks />
 
       <NavExtraControls />
-    </div>
+    </nav>
   );
 };
 
