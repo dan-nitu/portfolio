@@ -26,7 +26,7 @@ const HomePage = () => {
     <>
       <Breadcrumbs path={path} />
 
-      <div className='homepage'>
+      <div className='home-page'>
         <div className='line'>
           <span className='viola'>import </span>
           <span className='gold'>{leftCurlyBracket}</span>
