@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const ProjectsInfo = () => {
+const ProjectsInfo = (props) => {
   const [infoParagraph, setInfoParagraph] = useState('');
   const [index, setIndex] = useState(0);
   const [timer, setTimer] = useState(70);
@@ -22,7 +22,9 @@ const ProjectsInfo = () => {
 
       return () => clearTimeout(timeout);
     }
-  }, [index, initialText, timer]);
+
+    props.handleShowProjects(true);
+  }, [index, initialText, timer, props]);
 
   return (
     <div className='projects-info'>
