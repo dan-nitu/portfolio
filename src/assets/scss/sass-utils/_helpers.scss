@@ -15,3 +15,31 @@ $colors: (
     color: $color-value;
   }
 }
+
+.technology {
+  display: block;
+  height: 26px;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-color: $tuna;
+  border-radius: 50%;
+  border: solid 2px $tuna;
+
+  &:hover {
+    scale: 1.5;
+  }
+
+  &.react {
+    background-image: url('./../../images/react-logo.png');
+  }
+
+  &.javascript {
+    background-image: url('./../../images/javascript-logo.png');
+  }
+
+  &.html {
+    background-image: url('./../../images/html5-logo.png');
+  }
+}
