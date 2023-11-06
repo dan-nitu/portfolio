@@ -1,8 +1,9 @@
-.personal-projects {
+.projects-showcase {
   .content {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 15px;
+    margin-bottom: 20px;
 
     margin-top: 1rem;
     border: 1px solid $silver-chalice;
@@ -19,9 +20,25 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: $tuna;
 
-      img {
-        border-top-left-radius: 9px;
-        border-top-right-radius: 9px;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+
+      .image-wrapper {
+        position: relative;
+
+        img {
+          border-top-left-radius: 9px;
+          border-top-right-radius: 9px;
+        }
+
+        .technology {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
       }
 
       .data {

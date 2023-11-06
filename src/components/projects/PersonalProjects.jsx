@@ -34,7 +34,7 @@ const PersonalProjects = (props) => {
     {
       id: 4,
       title: 'Rock Paper Scissors',
-      technology: 'jsvsscript',
+      technology: 'javascript',
       screenshot: rockPaperScissors,
       demo: 'https://dn-js-rock-paper-scissors.vercel.app/',
       github: 'https://github.com/dan-nitu/rock-paper-scissors',
@@ -46,14 +46,14 @@ const PersonalProjects = (props) => {
   };
 
   return (
-    <div className={`tab personal-projects ${isActive ? 'active' : ''}`}>
+    <div className={`tab projects-showcase ${isActive ? 'active' : ''}`}>
       <h2 onClick={handleTabSelection}>personalProjects</h2>
       <div className='content'>
         {projects.map((project) => (
           <div className='card' key={project.id}>
             <div className='image-wrapper'>
               <img src={project.screenshot} alt='' />
-              <span className={project.technology}></span>
+              <span className={`technology ${project.technology}`}></span>
             </div>
 
             <div className='data'>
