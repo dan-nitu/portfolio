@@ -1,5 +1,5 @@
 import houseMarketplace from './../../assets/images/tutorial-works/house-marketplace.PNG';
-import githubFinder from './../../assets/images/tutorial-works/booklist.PNG';
+import githubFinder from './../../assets/images/tutorial-works/github-finder.png';
 import weatherJS from './../../assets/images/tutorial-works/weatherjs.PNG';
 import userForm from './../../assets/images/tutorial-works/user-form.PNG';
 import tracalorie from './../../assets/images/tutorial-works/tracalorie.PNG';
@@ -9,9 +9,6 @@ import numberGuesser from './../../assets/images/tutorial-works/number-guesser.P
 import loanCalculator from './../../assets/images/tutorial-works/loan-calculator.PNG';
 import chuckNorrisJokes from './../../assets/images/tutorial-works/chuck-norris-jokes.PNG';
 import booklist from './../../assets/images/tutorial-works/booklist.PNG';
-
-// 1024
-// 576
 
 const TutorialWorks = (props) => {
   let { isActive } = props;
@@ -128,10 +125,20 @@ const TutorialWorks = (props) => {
               <h3>{project.title}</h3>
 
               <div className='controls'>
-                <a href={project.demo} target='_blank' rel='noreferrer'>
+                <a
+                  className='demo'
+                  href={project.demo}
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   Demo <span className='demo'></span>
                 </a>
-                <a href={project.github} target='_blank' rel='noreferrer'>
+                <a
+                  className='github'
+                  href={project.github}
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   GitHub <span className='github'></span>
                 </a>
               </div>
