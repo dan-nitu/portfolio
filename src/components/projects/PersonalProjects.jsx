@@ -3,6 +3,8 @@ import weatherApp from './../../assets/images/personal-projects/weather-app.PNG'
 import spaceTourismWebsite from './../../assets/images/personal-projects/space-tourism-website.PNG';
 import rockPaperScissors from './../../assets/images/personal-projects/rock-paper-scissors.PNG';
 
+import ProjectCard from './ProjectCard';
+
 const PersonalProjects = (props) => {
   const { isActive } = props;
 
@@ -50,35 +52,7 @@ const PersonalProjects = (props) => {
       <h2 onClick={handleTabSelection}>personalProjects</h2>
       <div className='content'>
         {projects.map((project) => (
-          <div className='card' key={project.id}>
-            <div className='image-wrapper'>
-              <img src={project.screenshot} alt='' />
-              <span className={`technology ${project.technology}`}></span>
-            </div>
-
-            <div className='data'>
-              <h3>{project.title}</h3>
-
-              <div className='controls'>
-                <a
-                  className='demo'
-                  href={project.demo}
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  Demo <span className='demo'></span>
-                </a>
-                <a
-                  className='github'
-                  href={project.github}
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  GitHub <span className='github'></span>
-                </a>
-              </div>
-            </div>
-          </div>
+          <ProjectCard project={project} key={project.id} />
         ))}
       </div>
     </div>

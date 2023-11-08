@@ -10,6 +10,8 @@ import loanCalculator from './../../assets/images/tutorial-works/loan-calculator
 import chuckNorrisJokes from './../../assets/images/tutorial-works/chuck-norris-jokes.PNG';
 import booklist from './../../assets/images/tutorial-works/booklist.PNG';
 
+import ProjectCard from './ProjectCard';
+
 const TutorialWorks = (props) => {
   let { isActive } = props;
 
@@ -115,35 +117,7 @@ const TutorialWorks = (props) => {
       <h2 onClick={handleTabSelection}>tutorialWorks</h2>
       <div className='content'>
         {projects.map((project) => (
-          <div className='card' key={project.id}>
-            <div className='image-wrapper'>
-              <img src={project.screenshot} alt='' />
-              <span className={`technology ${project.technology}`}></span>
-            </div>
-
-            <div className='data'>
-              <h3>{project.title}</h3>
-
-              <div className='controls'>
-                <a
-                  className='demo'
-                  href={project.demo}
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  Demo <span className='demo'></span>
-                </a>
-                <a
-                  className='github'
-                  href={project.github}
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  GitHub <span className='github'></span>
-                </a>
-              </div>
-            </div>
-          </div>
+          <ProjectCard project={project} key={project.id} />
         ))}
       </div>
     </div>
