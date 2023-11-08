@@ -72,9 +72,19 @@
             padding: 0.5rem 0.75rem;
             border-radius: 0.25rem;
 
-            &:hover {
-              background-color: $silver;
+            &.demo {
+              &:hover {
+                background-color: $malibu;
+              }
+            }
 
+            &.github {
+              &:hover {
+                background-color: rgba($purple-heart, 0.6);
+              }
+            }
+
+            &:hover {
               span {
                 scale: 1.5;
                 rotate: 360deg;

@@ -60,10 +60,20 @@ const PersonalProjects = (props) => {
               <h3>{project.title}</h3>
 
               <div className='controls'>
-                <a href={project.demo} target='_blank' rel='noreferrer'>
+                <a
+                  className='demo'
+                  href={project.demo}
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   Demo <span className='demo'></span>
                 </a>
-                <a href={project.github} target='_blank' rel='noreferrer'>
+                <a
+                  className='github'
+                  href={project.github}
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   GitHub <span className='github'></span>
                 </a>
               </div>
