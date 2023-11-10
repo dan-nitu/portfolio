@@ -1,0 +1,54 @@
+.tutorial-card {
+  border-radius: 10px;
+  box-shadow: 0 0 20px -5px $mine-shaft2;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $tuna;
+
+  display: flex;
+
+  > * {
+    flex-basis: 50%;
+  }
+
+  .image-wrapper {
+    position: relative;
+
+    img {
+      border-radius: 9px;
+    }
+
+    .technology {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+
+    a {
+      text-decoration: none;
+      color: $tuna;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: Bold;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.8rem;
+      line-height: 2rem;
+    }
+
+    p {
+      margin-top: 1.5rem;
+    }
+  }
+}
