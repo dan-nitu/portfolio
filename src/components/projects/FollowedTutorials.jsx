@@ -55,7 +55,7 @@ const FollowedTutorials = (props) => {
       id: 5,
       title: 'Front-end web development & design tips, tricks and tutorials',
       author: 'Kevin Powell',
-      description: `They call him 'CSS Evangelist' for a reason. :D`,
+      description: `The internet calls him the 'CSS Evangelist' for a reason. :D`,
       technology: 'css',
       screenshot: KevinPowell,
       link: 'https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw',
