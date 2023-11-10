@@ -31,15 +31,17 @@ $colors: (
     scale: 1.5;
   }
 
-  &.react {
-    background-image: url('./../../images/react-logo.png');
-  }
+  $technologies: (
+    'react': './../../images/react-logo.png',
+    'javascript': './../../images/javascript-logo.png',
+    'html': './../../images/html5-logo.png',
+    'css': './../../images/css-logo.png',
+    'typescript': './../../images/typescript-logo.png',
+  );
 
-  &.javascript {
-    background-image: url('./../../images/javascript-logo.png');
-  }
-
-  &.html {
-    background-image: url('./../../images/html5-logo.png');
+  @each $technology-name, $technology-image in $technologies {
+    &.#{$technology-name} {
+      background-image: url($technology-image);
+    }
   }
 }
