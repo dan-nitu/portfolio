@@ -1,0 +1,22 @@
+.projects {
+  .selection-menu {
+    margin-top: 2rem;
+
+    h2 {
+      line-height: 1.5;
+      cursor: pointer;
+
+      &:before {
+        content: '>';
+        display: inline-block;
+        margin-right: 6px;
+      }
+
+      &.active {
+        &:before {
+          rotate: 90deg;
+        }
+      }
+    }
+  }
+}

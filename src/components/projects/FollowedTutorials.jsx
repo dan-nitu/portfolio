@@ -72,18 +72,11 @@ const FollowedTutorials = (props) => {
     },
   ];
 
-  const handleTabSelection = () => {
-    props.handleTabSelection('followedTutorials');
-  };
-
   return (
-    <div className={`tab projects-showcase ${isActive ? 'active' : ''}`}>
-      <h2 onClick={handleTabSelection}>followedTutorials</h2>
-      <div className='content'>
-        {tutorials.map((tutorial) => (
-          <TutorialCard tutorial={tutorial} key={tutorial.id} />
-        ))}
-      </div>
+    <div className={`projects-showcase ${isActive ? 'active' : ''}`}>
+      {tutorials.map((tutorial) => (
+        <TutorialCard tutorial={tutorial} key={tutorial.id} />
+      ))}
     </div>
   );
 };

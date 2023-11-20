@@ -43,18 +43,11 @@ const PersonalProjects = (props) => {
     },
   ];
 
-  const handleTabSelection = () => {
-    props.handleTabSelection('personalProjects');
-  };
-
   return (
-    <div className={`tab projects-showcase ${isActive ? 'active' : ''}`}>
-      <h2 onClick={handleTabSelection}>personalProjects</h2>
-      <div className='content'>
-        {projects.map((project) => (
-          <ProjectCard project={project} key={project.id} />
-        ))}
-      </div>
+    <div className={`projects-showcase ${isActive ? 'active' : ''}`}>
+      {projects.map((project) => (
+        <ProjectCard project={project} key={project.id} />
+      ))}
     </div>
   );
 };

@@ -74,35 +74,24 @@
       }
     }
 
-    .accordion {
-      margin-top: 2rem;
+    .selection {
+      margin-top: 0.5rem;
 
-      .tab {
-        h2 {
-          line-height: 1.5;
-          cursor: pointer;
+      .projects-showcase {
+        display: none;
 
-          &:before {
-            content: '>';
-            display: inline-block;
-            margin-right: 6px;
-          }
-        }
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        margin-bottom: 20px;
 
-        .content {
-          display: none;
-        }
+        border: 1px solid $silver-chalice;
+        border-radius: 5px;
+        padding: 1rem 0.5rem;
+        background-color: $linen;
 
         &.active {
-          .content {
-            display: flex;
-          }
-
-          h2 {
-            &:before {
-              rotate: 90deg;
-            }
-          }
+          display: flex;
         }
       }
     }

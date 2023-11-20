@@ -1,5 +1,5 @@
 .project-card {
-  width: min(100%, 350px);
+  width: clamp(370px, calc(50% - 15px - 1rem), 100%);
 
   border-radius: 10px;
   box-shadow: 0 0 20px -5px $mine-shaft2;
