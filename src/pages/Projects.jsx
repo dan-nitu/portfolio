@@ -11,7 +11,7 @@ const ProjectsPage = () => {
   };
 
   return (
-    <div className='projects-page'>
+    <div className='projects-page page'>
       <ProjectsInfo handleShowProjects={handleShowProjects} />
 
       {showProjects && <Projects />}
