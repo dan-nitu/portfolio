@@ -1,0 +1,109 @@
+.about-page {
+  font-family: Consolas, 'Courier New', monospace;
+
+  .info-text {
+    text-indent: 1rem;
+
+    h1 {
+      font-weight: bold;
+      font-size: 1.5em;
+
+      color: $viola;
+      max-width: 50ch;
+    }
+
+    h2 {
+      margin-top: 2rem;
+
+      font-weight: bold;
+      font-size: 1.25em;
+
+      color: $puerto-rico;
+      max-width: 50ch;
+    }
+
+    span {
+      display: block;
+      color: $silver;
+
+      font-size: 1.1rem;
+      font-weight: bold;
+
+      margin-top: 1.5rem;
+    }
+
+    p {
+      color: $silver;
+    }
+
+    .story {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      position: relative;
+      max-height: 10ch;
+      max-width: 80ch;
+      overflow: hidden;
+
+      border: solid 1px $silver;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+
+      -webkit-box-shadow: inset 0px -3ch 31px -15px $silver;
+      -moz-box-shadow: inset 0px -3ch 31px -15px $silver;
+      box-shadow: inset 0px -3ch 2.5ch -3ch $silver;
+
+      &.full {
+        max-height: unset;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        padding-bottom: 2.5rem;
+
+        .control {
+          rotate: 270deg;
+        }
+
+        .info {
+          display: none;
+        }
+      }
+
+      .control {
+        position: absolute;
+        display: block;
+
+        bottom: 0.5rem;
+        left: calc(50% - 15px);
+
+        height: 30px;
+        aspect-ratio: 1/1;
+        background: $silver;
+        border-radius: 50%;
+
+        background-image: url('./../../images/arrow-forward-ios.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+
+        rotate: 90deg;
+
+        cursor: pointer;
+        transition: all ease 0.5s;
+      }
+
+      .info {
+        cursor: default;
+        position: absolute;
+        display: block;
+
+        bottom: 0.75rem;
+        right: 0.25rem;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
