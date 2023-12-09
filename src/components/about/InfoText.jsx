@@ -19,7 +19,7 @@ const InfoText = () => {
         frontend development.
       </h2>
 
-      <span>Here's my story:</span>
+      <p className='bigger has-arrow'>Here's my story:</p>
 
       <div className={showStory ? 'story full' : 'story'}>
         <p>
