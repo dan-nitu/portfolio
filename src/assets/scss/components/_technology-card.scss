@@ -21,7 +21,7 @@
   }
 
   &:hover {
-    &::after {
+    &::before {
       content: '';
 
       position: absolute;
@@ -38,6 +38,17 @@
         100% calc(100% - 20px),
         0% calc(100% - 20px)
       );
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      width: 70px;
+      height: 7.5px;
+      border-radius: 50%;
+      background-color: $tuna;
+      filter: blur(1.25px);
     }
 
     .lamp {
