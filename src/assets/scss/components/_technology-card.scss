@@ -1,4 +1,10 @@
 .technology-card {
+  $animation-duration: 1s;
+  $animation-step-1: 20%;
+  $animation-step-2: 25%;
+  $animation-step-3: 40%;
+  $animation-step-4: 50%;
+
   position: relative;
   isolation: isolate;
 
@@ -38,6 +44,11 @@
         100% calc(100% - 20px),
         0% calc(100% - 20px)
       );
+
+      animation-name: light-flicker;
+      animation-duration: $animation-duration;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
     }
 
     &::after {
@@ -49,11 +60,21 @@
       border-radius: 50%;
       background-color: $tuna;
       filter: blur(1.25px);
+
+      animation-name: shadow-flicker;
+      animation-duration: $animation-duration;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
     }
 
     .lamp {
       .light-bulb {
         &::after {
+          animation-name: light-bulb-flicker;
+          animation-duration: $animation-duration;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+
           background-color: $portafino;
         }
       }
@@ -128,5 +149,72 @@
 
   span {
     text-indent: 0;
+  }
+
+  @keyframes light-bulb-flicker {
+    from {
+      background-color: $silver;
+    }
+
+    #{($animation-step-1)} {
+      background-color: $portafino;
+    }
+    #{($animation-step-2)} {
+      background-color: $silver;
+    }
+    #{($animation-step-3)} {
+      background-color: $portafino;
+    }
+    #{($animation-step-4)} {
+      background-color: $silver;
+    }
+
+    to {
+      background-color: $portafino;
+    }
+  }
+  @keyframes light-flicker {
+    from {
+      background-color: transparent;
+    }
+
+    #{($animation-step-1)} {
+      background-color: rgba($portafino, 0.1);
+    }
+    #{($animation-step-2)} {
+      background-color: transparent;
+    }
+    #{($animation-step-3)} {
+      background-color: rgba($portafino, 0.3);
+    }
+    #{($animation-step-4)} {
+      background-color: rgba($portafino, 0.1);
+    }
+
+    to {
+      background-color: rgba($portafino, 0.5);
+    }
+  }
+  @keyframes shadow-flicker {
+    from {
+      background-color: transparent;
+    }
+
+    #{($animation-step-1)} {
+      background-color: $tuna;
+    }
+    #{($animation-step-2)} {
+      background-color: transparent;
+    }
+    #{($animation-step-3)} {
+      background-color: $tuna;
+    }
+    #{($animation-step-4)} {
+      background-color: transparent;
+    }
+
+    to {
+      background-color: $tuna;
+    }
   }
 }
