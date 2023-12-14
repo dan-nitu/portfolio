@@ -9,17 +9,9 @@ const InfoText = () => {
 
   return (
     <section className='info-text'>
-      <h1>
-        Oh, you're curious to learn more about me? No need to mention it — I was
-        already aware! After all, you've found yourself on the about page.
-      </h1>
+      <h2>Hi! I'm Dan, a guy pasionate about frontend development.</h2>
 
-      <h2>
-        Ooops, where are my manners? Sorry! I'm Dan, a guy pasionate about
-        frontend development.
-      </h2>
-
-      <p className='bigger has-arrow'>Here's my story:</p>
+      <p className='bigger has-arrow'>My story:</p>
 
       <div className={showStory ? 'story full' : 'story'}>
         <p>
@@ -47,9 +39,9 @@ const InfoText = () => {
 
         <p>
           <b>Spoiler alert!</b> Season 2, Part 2 is currently in development,
-          and I'm on the lookout to fill a key role. Below, you'll discover a
-          list of technologies I'm comfortable with, and for a sneak peek at my
-          personal projects, head over to the About Page.
+          and I'm on the lookout to fill a key role. On this page, you'll
+          discover a list of technologies I'm comfortable with, and for a sneak
+          peek at my personal projects, head over to the About Page.
         </p>
 
         <p>

@@ -20,17 +20,7 @@
   }
 
   .info-text {
-    h1 {
-      font-weight: bold;
-      font-size: 1.5em;
-
-      color: $viola;
-      max-width: 50ch;
-    }
-
     h2 {
-      margin-top: 2rem;
-
       font-weight: bold;
       font-size: 1.25em;
 
@@ -122,12 +112,15 @@
       grid-template-columns: repeat(4, 1fr);
       overflow: hidden;
 
+      box-shadow: inset 0px 0px 150px $tuna;
+      border-radius: 0.25rem;
+
       background: repeating-conic-gradient(
             from 90deg at 95% 55%,
             $tuna 0% 25%,
             transparent 0% 100%
           )
-          50% / calc(1vmax * 5) calc(1vmax * 5),
+          50% / calc(1vmax * 2.5) calc(1vmax * 2.5),
         repeating-linear-gradient(
             180deg,
             $tuna 0 5%,
@@ -135,7 +128,7 @@
             $tuna 0 55%,
             $nutmeg 0 100%
           )
-          50% / calc(1vmax * 10) calc(1vmax * 5),
+          50% / calc(1vmax * 5) calc(1vmax * 2.5),
         repeating-linear-gradient(
             90deg,
             $pickled-bean 0 47.5%,
@@ -143,7 +136,7 @@
             $pickled-bean 0 97.5%,
             $tuna 0 100%
           )
-          50% / calc(1vmax * 10) calc(1vmax * 5);
+          50% / calc(1vmax * 5) calc(1vmax * 2.5);
     }
   }
 }

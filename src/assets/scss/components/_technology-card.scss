@@ -23,7 +23,7 @@
     position: absolute;
 
     width: 100vw;
-    border-top: solid 4px $silver-chalice;
+    border-top: solid 4px $cod-gray;
   }
 
   &:hover {
@@ -93,13 +93,16 @@
       position: relative;
       display: block;
 
-      background-color: $silver-chalice;
+      background-color: $cod-gray;
+      border-left: solid 1px $silver-chalice;
+      border-right: solid 1px $silver-chalice;
       width: 5px;
       height: calc($card-width / 3);
     }
 
     .lamp-body {
       display: block;
+      margin-top: -1px;
 
       width: $card-width;
       height: calc($card-width / 2);
@@ -109,7 +112,8 @@
         content: '';
         display: block;
         border-radius: 45%;
-        background-color: $silver-chalice;
+        background-color: $cod-gray;
+        border: solid 1px $silver-chalice;
         width: $card-width;
         height: $card-width;
       }
@@ -149,6 +153,7 @@
 
   span {
     text-indent: 0;
+    text-shadow: 1px 1px 2px $black, 0 0 1em $portafino, 0 0 0.2em $portafino;
   }
 
   @keyframes light-bulb-flicker {
